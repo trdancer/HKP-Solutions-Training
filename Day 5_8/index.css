@@ -1,6 +1,7 @@
 body {
 	margin: 0 0;
-	font-family: sans-serif;
+	font-family: "Oswald", sans-serif;
+	background-color: #222;
 }
 #header {
 	position: fixed;
@@ -20,8 +21,8 @@ body {
 	padding: 10px 10px;
 	width: 100%;
 	min-height: 75px;
-	/*max-height: 100%;
-	object-fit: cover;*/
+	ming-width: 75px;
+	object-fit: cover;
 }
 #nav-bar {
 	display: grid;
@@ -53,7 +54,7 @@ body {
 	/*width: 100%;*/
 	padding: 20px 10px;
 	text-decoration: underline;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	font-size: 1.5rem;
 	transition: all ease 0.5s;
 }
@@ -65,17 +66,34 @@ main {
 	/*padding-top: 20px;*/
 	margin-top: 17vh;
 }
+section {
+	border-top: 5vh solid #300;
+}
+h1, h2 {
+	margin: 0 0 20px 0;
+	text-align: center;
+	width: 100%;
+	color: #DDD;
+}
+h1 {
+	font-size: 5vh;
+}
+h2 {
+	font-size: 4vh;
+}
 #feature-image {
 	width: 100%;
 }
 #description {
 	width: 100%;
 	position: relative;
+	margin-bottom: -10px;
+	border: none;
 }
 .desc-item {
 	background-color: #444a;
 	z-index: 4;
-	color: black;
+	color: #111;
 	position: absolute;
 	width: 25%;
 	padding: 10px 10px;
@@ -98,4 +116,55 @@ main {
 	margin-left: 5px;
 	bottom: 3%;
 	left: 3%;
+}
+#video {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px 0 30px 0;
+}
+#pricing {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.item {
+	background-color: #444;
+	width: 32%;
+	display: inline-block; 
+	border: #AAA solid 2px;
+	border-radius: 2px;
+	margin: 3px;
+}
+#contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px 0;
+	border-bottom: 5vh solid #300;
+}
+#form {
+	width: 40%;
+	display: flex;
+	align-items: center;
+}
+#email {
+	border: none;
+	border-radius: 3px;
+	background-color: #444;
+	font-size: 1rem;
+	padding: 7px 6px;
+	width: 80%;
+	margin: 0 5px;
+}
+#submit-button {
+	font: 12pt Oswald;
+	color: #AAA;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	width: 15%;
+	background-color: #444;
+	height: 100%;
+	margin: 0 5px;
 }
