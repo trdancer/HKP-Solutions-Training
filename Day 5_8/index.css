@@ -129,7 +129,7 @@ a {
 	bottom: 3%;
 	left: 3%;
 }
-#video {
+#video-section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -198,7 +198,7 @@ ul {
 	width: 80%;
 	margin: 0 5px;
 }
-#submit-button {
+#submit {
 	font: 12pt Oswald;
 	color: #AAA;
 	cursor: pointer;
