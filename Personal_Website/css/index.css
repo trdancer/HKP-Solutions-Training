@@ -4,29 +4,40 @@ body {
 	box-sizing: border-box;
 	font-family: Raleway, sans-serif;
 	min-height: 101vh;
+	background-color: #29b3d9;
 }
 header {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: 3;
+	/*z-index: 3;*/
 	width: 20vw;
 }
+a {
+	color: #091b43;
+	transition: color 0.3s ease; 
+}
+a:hover {
+	color: #000;
+}
 #name-header {
-	position: absolute;
-	z-index: 100;
-	width: 100%;
-	margin-top: 5%;
-	margin-left: 12%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 12;
+	width: 20vw;
+	margin-top: 1%;
+	margin-left: 2%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 #color-bar {
-	position: absolute;
+	position: fixed;
+	z-index: 11;
 	width: 100%;
 	height: 10vh;
-	background-color: #3be3dc;
+	background-color: #29b3d9;
 	top: 0px;
 	left: 0px;
 	border-bottom: solid 2px black;
@@ -42,17 +53,18 @@ header h1 {
 	/*margin-bottom: 5%;*/
 }
 #menu {
-	z-index: 10;
-	position: absolute;
+	z-index: 11;
+	position: fixed;
 	top: 0px;
-	left: -24vw;
+	left: -30vw;
 	height: 100vh;
 	background-color: #36d1cccc;
-	padding: 0 8%;
+	padding: 0 2%;
 	width: 20vw;
-	transition: all ease-in-out 1s;
+	border-right: solid 2px black;
+	transition: all ease-in-out 0.7s;
 }
-header:hover #menu {
+#menu.slide-out {
 	left: 0px;
 }
 #menu-items-div {
@@ -60,20 +72,21 @@ header:hover #menu {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-top: 20%;
+	margin-top: 21%;
 	margin-left: 3%;
 
 }
 #menu-items-div a {
-	padding: 7px 5px;
-	width: 98%;
+	padding: 7px 10px;
+	width: 97%;
 	margin: 10px 0;
 	font-size: 4vh;
-	color: darkblue;
+	color: #063e6d;
 	transition: all ease 0.3s; 
 }
 #menu-items-div a:hover {
-	background-color: #2db1bdaa;
+	color: #000;
+	background-color: #16a0a6aa;
 } 
 #menu-icon {
 	/*z-index: 80;*/
@@ -81,6 +94,7 @@ header:hover #menu {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
+	cursor: pointer;
 	/*left: 5px;
 	top: 5%;*/
 }
@@ -90,7 +104,7 @@ header:hover #menu {
 	margin: 0 0;
 	width: 100%;
 	background-color: #000;
-	transition: all ease-in-out 0.7s;
+	transition: all ease-in-out 0.6s;
 }
 .menu-bar:nth-child(1) {
 	top: 0px;
@@ -106,22 +120,72 @@ header:hover #menu {
 	left: 0px;
 	transform-origin: bottom left; 
 }
-#name-header:hover #top-bar {
+#menu-icon.ex #top-bar {
 	transform: rotateZ(45deg);
 	width: 120%;
 }
-#name-header:hover #mid-bar {
+#menu-icon.ex #mid-bar {
 	opacity: 0;
 }
-#name-header:hover #bottom-bar {
+#menu-icon.ex #bottom-bar {
 	transform: rotateZ(-45deg);
 	width: 120%;
 }
 main {
+	position: relative;
 	margin: 70px 0 0 0;
 	background-color: #29b3d9;
-	padding: 50px 0;
+	/*padding: 50px 0;*/
+	width: 100%;
+}
+main #title-image {
+	position: relative;
+	object-fit: cover;
+	/*object-position: 0 -210px;*/
+	top: 0px;
+	width: 100%;
+	height: 80%
+	/*padding-bottom: -210px;*/
+	/*transition: top ease 0.1s;*/
+}
+#intro {
+	background-color: #29b3d9aa;
+	position: absolute;
+	top: 50px;
+	left: 10vw;
+	width: 25vw;
+	z-index: 8;
+	padding: 2% 5%;
+	font-size: 5vh;
+	line-height: 50px;
+}
+#intro p {
+
+}
+.floating-card {
+	padding: 10px 15px;
+	background-color: #29b3d9f1;
+	position: relative;
+	z-index: 7;
+	margin: 2% 9%;
+	font-size: 4vh;
+	/*box-shadow: 0 0 10px 0px #073109;*/
+}
+#web-dev {
+	top: -280px;
+	
+}
+#education {
+	top: 250px;
 }
 footer {
-	margin: 70px 5% auto 8.5%;
+	text-align: center;
+	width: 100%;
+	background-color: #4a4039;
+	position: relative;
+	bottom: -250px;
+	left: 0px;
+	font-size: 4vh;
+	padding: 10px 0;
+	/*margin: 70px 5% auto 8.5%;*/
 }
