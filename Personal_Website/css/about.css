@@ -1,0 +1,21 @@
+#bio {
+	padding: 3% 0;
+	margin-top: 4%;
+	margin: 4% 5%;
+}
+#bio-text {
+	width: 50%;
+	margin: 3% auto;
+	line-height: 140%;
+	font-size: 2.5vh;
+	text-align: justify;
+}
+#headshot-div {
+	width: 20%;
+	display: block;
+	margin: 0 auto;
+}
+#headshot {
+	border-radius: 50%;
+	width: 100%;
+}

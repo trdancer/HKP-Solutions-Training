@@ -1,0 +1,31 @@
+#main-section {
+	position: relative;
+	min-height: 100vh;
+}
+#title-image {
+	position: relative;
+	width: 100%;
+	object-fit: cover;
+}
+.floating-card {
+	padding: 10px 15px;
+	background-color: #29b3d9f1;
+	position: absolute;
+	z-index: 7;
+	margin: 0 9%;
+	font-size: 3vh;
+	/*box-shadow: 0 0 10px 0px #073109;*/
+}
+#dance-about {
+	bottom: -200px;
+}
+#work-about {
+	bottom: -1000px;
+}
+#choreography-section {
+	min-height: 500px;
+}
+footer {
+	/*position: relative;*/
+	bottom: 0px;
+}

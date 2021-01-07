@@ -1,0 +1,27 @@
+main {
+	background-color: #41d9fc;
+	padding: 3% 0;
+}
+#email-div {
+	margin: 0 3%;
+}
+label {
+	font-size: 3vh;
+}
+input[type="email"], input[type="text"] {
+	height: 2.6vh;
+	font-size: 2.4vh;
+	margin-right: 2%;
+}
+input[type="submit"] {
+	font-size: 2.2vh;
+	border-style: solid;
+	border-radius: 3px;
+	font-family: inherit;
+	font-weight: 600;
+	padding: 1px 1%;
+	background-color: white;
+}
+input:focus {
+	border-style: solid;
+}
