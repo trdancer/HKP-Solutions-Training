@@ -4,7 +4,7 @@ body {
 	box-sizing: border-box;
 	font-family: Raleway, sans-serif;
 	min-height: 100vh;
-	background-color: #29b3d9;
+	background-color: #41d9fc;
 	scroll-behavior: smooth;
 }
 header {
@@ -158,5 +158,6 @@ footer {
 	position: relative;
 	font-size: 4vh;
 	padding: 10px 0;
+	bottom: 0px;
 	/*margin: 70px 5% auto 8.5%;*/
 }

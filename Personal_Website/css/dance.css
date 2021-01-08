@@ -23,7 +23,20 @@
 	bottom: -1000px;
 }
 #choreography-section {
+	background-color: inherit;
 	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#choreography-video {
+	margin-top: 2%;
+	width: 60%;
+}
+#choreography-section h2, #choreography-section h1 {
+	text-align: center;
+	flex-basis: 100%;
+	margin: 1% 0;
 }
 footer {
 	/*position: relative;*/
