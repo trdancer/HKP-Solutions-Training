@@ -5,13 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/contact.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="color-bar"></div>
 	<header>
 		<div id="name-header">
-			<!-- Will be a button to toggle menu in and out with javascript -->
 			<div id="menu-icon">
 				<div class="menu-bar" id="top-bar"></div>
 				<div class="menu-bar" id="mid-bar"></div>
@@ -32,16 +31,27 @@
 	</header>
 	<main id="main-section">
 		<div id="inquiry-section">
-			<p>For business inquiries, please complete the contact form below.</p>
+			<h2>For business or other related inquiries, please complete the contact form below.</h2>
 			<form>
-				<label for="inquiry-name">Name</label>
-				<input type="text" name="inquiry-name" id="inquiry-name">
-				<label for="inquiry-email">Email</label>
-				<input type="email" name="inquiry-email">
-				<label for="inquiry-subject">Subject</label>
-				<input type="text" name="inquiry-subject">
-				<label for="inquiry-message">Message</label>
-				<textarea name="inquiry-message" id="message-body"></textarea>
+				<div class="form-line">
+					<label for="inquiry-name">Name</label>
+					<input type="text" name="inquiry-name" id="inquiry-name">
+				</div>
+				<div class="form-line">
+					<label for="inquiry-email">Email</label>
+					<input type="email" name="inquiry-email">
+					
+				</div>
+				<div class="form-line">
+					<label for="inquiry-subject">Subject</label>
+					<input type="text" name="inquiry-subject">
+					
+				</div>
+				<div class="form-line">
+					<label for="inquiry-message">Message</label>
+					<textarea name="inquiry-message" id="message-body"></textarea>
+					
+				</div>
 			</form>
 
 		</div>
@@ -58,7 +68,7 @@
 	</main>
 	<footer id="footer-section">
 		Designed by Troy Kelley 2021
-	</footer id="footer-section">
+	</footer >
 </body>
 <script type="text/javascript" src="../scripts/common.js"></script>
 </html>

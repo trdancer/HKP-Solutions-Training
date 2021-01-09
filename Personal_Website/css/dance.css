@@ -13,11 +13,12 @@
 	position: absolute;
 	z-index: 7;
 	margin: 0 9%;
-	font-size: 3vh;
+	font-size: 3.5vh;
+	line-height: 4.5vh;
 	/*box-shadow: 0 0 10px 0px #073109;*/
 }
 #dance-about {
-	bottom: -200px;
+	bottom: 155px;
 }
 #work-about {
 	bottom: -1000px;
@@ -37,6 +38,9 @@
 	text-align: center;
 	flex-basis: 100%;
 	margin: 1% 0;
+}
+#choreography-section h1 {
+	font-size: 5vh;
 }
 footer {
 	/*position: relative;*/

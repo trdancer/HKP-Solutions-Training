@@ -1,0 +1,53 @@
+h1 {
+	font-size: 5vh;
+	margin: 6% 6% 1% 6%;
+}
+p {
+	margin: 2% 6% 2% 6%;
+	line-height: 4vh;
+	font-size: 2.5vh;
+}
+.photos {
+	display: flex;
+	justify-content: space-around;
+	margin: 2% 5%;
+	/*width: 100%;*/
+	flex-wrap: wrap;
+}
+.photos .photo {
+	display: inline-block;
+	flex-basis: 23%;
+	/*width: 20%;*/
+	margin: 1%;
+	transition: 0.7s all ease;
+
+}
+.photos img {
+	width: 100%;
+	margin: 1% 0;
+	object-fit: contain;
+	/*display: inline-block;*/
+}
+.photos .caption {
+	background-color: #41d9fc;
+	/*display: block;*/
+	opacity: 0;
+	transition: 0.7s all ease;
+}
+.photos .caption:hover {
+	/*cursor: default;*/
+} 
+.photos .photo:hover {
+	transform: scale(1.3);
+}
+.photos .photo:hover .caption {
+	opacity: 1;
+}
+.photos:nth-child(2) img {
+
+}
+.photos:nth-child(6) .photo {
+	width: 23%;
+	flex-basis: 30%;
+
+}

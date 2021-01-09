@@ -102,7 +102,7 @@ header h2 {
 }
 #menu-items-div a:hover, #menu-items-div a.active {
 	color: #000;
-	background-color: #4084caaa;
+	background-color: #904927aa;
 } 
 #menu-icon {
 	/*z-index: 80;*/
@@ -152,6 +152,7 @@ main {
 	background-color: #41d9fc;
 }
 footer {
+	color: #181818;
 	text-align: center;
 	width: 100%;
 	background-color: #4a4039;

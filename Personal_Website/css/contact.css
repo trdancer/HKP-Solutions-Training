@@ -2,11 +2,26 @@ main {
 	background-color: #41d9fc;
 	padding: 3% 0;
 }
-#email-div {
+main > div {
+	margin: 0 3%;
+
+} 
+form {
 	margin: 0 3%;
 }
+.form-line {
+	margin: 2% 0;
+}
 label {
+	display: inline-block;
 	font-size: 3vh;
+	width: 7%;
+}
+input, textarea {
+	background-color: #d7d7d7;
+	border-style: solid;
+	border-radius: 3px;
+	border-width: 2px;
 }
 input[type="email"], input[type="text"] {
 	height: 2.6vh;
@@ -16,7 +31,6 @@ input[type="email"], input[type="text"] {
 input[type="submit"] {
 	font-size: 2.2vh;
 	border-style: solid;
-	border-radius: 3px;
 	font-family: inherit;
 	font-weight: 600;
 	padding: 1px 1%;
@@ -24,4 +38,9 @@ input[type="submit"] {
 }
 input:focus {
 	border-style: solid;
+}
+#message-body {
+	height: 250px;
+	width: 550px;
+	vertical-align: top;
 }

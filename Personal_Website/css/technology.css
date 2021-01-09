@@ -1,7 +1,67 @@
+h1 {
+	text-align: center;
+	font-size: 5vh;
+}
 h2 {
 	text-align: center;
+	font-size: 4.4vh;
 }
 #intro {
-	margin: 7% 6%;
-	font-size: 2.5vh;
+	margin: 8% 6% 4% 6%;
+	font-size: 2.9vh;
+}
+main > div:nth-child(n+2) {
+	border-top: solid black 2px;
+	margin-bottom: 3%;
+}
+#work-samples p {
+	text-align: center;
+	font-size: 2.7vh;
+	line-height: 4vh;
+}
+#strikethrough-images {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+.image {
+	flex-basis: 40%;
+	margin: 1% 0;
+	position: relative;
+}
+.image img {
+	width: 100%;
+	position: relative;
+}
+.image::after {
+	display: inline-block;
+	background-image: linear-gradient(#0000, #000 95%);
+	z-index: 7;
+	content: " ";
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 90%;
+	position: absolute;
+}
+.image-caption {
+	margin-top: 2%;
+	font-size: 3vh;
+	text-align: center;
+	font-weight: 500;
+}
+#resume-div {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#resume-div h2 {
+	flex-basis: 100%;
+}
+#pdf-viewer {
+	width: 51%;
+	height: 100vh;
 }
